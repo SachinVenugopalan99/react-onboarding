@@ -1,0 +1,461 @@
+.outerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Inter;
+    .container{
+        width: 600px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        top: 50%;
+        .headerContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .image{
+                width: 35px;
+                height: 35px;
+                margin-right: 5px;
+            }
+            .headerText{
+                font-size: 32px;
+                font-weight: bold;
+            }
+        }
+        .progressBar{
+            width: 90%;
+            margin: 50px 0px 70px 0px;
+            .RSPBprogressBar{
+                height: 3px;
+            }
+            .RSPBprogression{
+                background: #5851d3;
+            }
+            .indexedStep {
+                color: rgb(40 44 52 / 65%);
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                // background-color: rgba(211, 211, 211, 0.76);
+                background: white;
+                border: 1px solid #f0f0f0;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .indexedStep.accomplished {
+                background-color: #5851d3;
+                color: white;
+              }
+        }
+        .subComponents{
+            width: 100%;
+            .innerContainer{
+                .titleContainer{
+                    margin-bottom: 60px;
+                    .title{
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                    .subTitle{
+                        color: rgb(40 44 52 / 65%);
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                }
+                .inputContainer{
+                    margin-bottom: 25px;
+                    .first-input{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .second-input{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 10px;
+                        // .titleHeader{
+                        //     font-size: 16px;
+                        //     display: flex;
+                        //     justify-content: flex-start;
+                        // }
+                        // .input-container{
+                        //     width: 100%;
+                        //     input[type=text] {
+                        //         width: 100%;
+                        //         padding: 12px 20px;
+                        //         margin: 8px 0;
+                        //         box-sizing: border-box;
+                        //       }
+                        // }
+                    }
+                    .titleHeader{
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: flex-start;
+                        .optional{
+                            margin-left: 3px;
+                        }
+                    }
+                    .input-container{
+                        width: 100%;
+                        display: flex;
+
+                        input[type=url] {
+                            width: 30%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            border: 1px solid rgb(211 211 211 / 83%);
+                          }
+                          input[type=text] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            border: 1px solid rgb(211 211 211 / 83%);
+                          }
+                    }
+                    .errorMessage{
+                        display: flex;
+                        justify-content: flex-start;
+                        color: red;
+                        font-size: 14px;
+                    }
+                }
+                .user-container{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    .userBox{
+                        padding: 18px;
+                        height: 140px;
+                        width: 125px;
+                        border: 1px solid rgb(211 211 211 / 83%);
+                        border-radius: 5px;
+                        margin-right: 40px;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .teamBox{
+                        padding: 18px;
+                        height: 140px;
+                        width: 125px;
+                        border: 1px solid rgb(211 211 211 / 83%);
+                        border-radius: 5px;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .image{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .boxTitle{
+                        margin-top: 10px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: flex-start;
+                        font-weight: bold;
+                    }
+                    .boxDescription{
+                        margin-top: 10px;
+                        font-size: 15px;
+                        display: flex;
+                        color: rgb(111 105 105 / 88%);
+                        justify-content: flex-start;
+                    }
+                    .border-purple{
+                        border: 1px solid #5851d3;
+                    }
+                    .red-border{
+                        border: 1px solid red;
+                    }
+                }
+                .circleContainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 15px 0px 40px 0px;
+                    .circle {
+                        position: relative;
+                        background: #5851d3;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                      }
+                      
+                      .checkmark {
+                        position: absolute;
+                        transform: rotate(45deg) translate(-50%, -50%);
+                        left: 35%;
+                        top: 45%;
+                        height: 40px;
+                        width: 20px;
+                        border-bottom: 3px solid white;
+                        border-right: 3px solid white;
+                      }
+                }
+            }
+        }
+        .button{
+            width: 100%;
+            padding: 15px 0px;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #5851d3;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 490px) {
+    .outerContainer{
+    .container{
+        width: 480px;
+        padding: 10px;
+        .headerContainer{
+            .image{
+                width: 30px;
+                height: 30px;
+            }
+            .headerText{
+                font-size: 26px;
+            }
+        }
+        .progressBar{
+            width: 90%;
+            margin: 40px 0px 60px 0px;
+            .RSPBprogressBar{
+                height: 3px;
+            }
+            .RSPBprogression{
+                background: #5851d3;
+            }
+            .indexedStep {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+              }
+              
+              .indexedStep.accomplished {
+                background-color: #5851d3;
+                color: white;
+              }
+        }
+        .subComponents{
+            .innerContainer{
+                .titleContainer{
+                    margin-bottom: 50px;
+                    .title{
+                        font-size: 30px;
+                    }
+                    .subTitle{
+                        font-size: 18px;
+                    }
+                }
+                .inputContainer{
+                    margin-bottom: 25px;
+                    .first-input{
+                    }
+                    .second-input{
+                        margin-top: 10px;
+                    }
+                    .titleHeader{
+                        font-size: 14px;
+                        .optional{
+                            margin-left: 3px;
+                        }
+                    }
+                    .input-container{
+
+                        input[type=url] {
+                            font-size: 12px;
+                          }
+                          input[type=text] {
+                            font-size: 12px;
+                          }
+                    }
+                    .errorMessage{
+                        font-size: 14px;
+                    }
+                }
+                .user-container{
+                    margin-bottom: 30px;
+                    .userBox{
+                        padding: 18px;
+                        height: 140px;
+                        width: 125px;
+                    }
+                    .teamBox{
+                        padding: 18px;
+                        height: 140px;
+                        width: 125px;
+                    }
+                    .image{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .boxTitle{
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+                    .boxDescription{
+                        margin-top: 10px;
+                        font-size: 15px;
+                    }
+                }
+                .circleContainer{
+                    .circle {
+                        width: 85px;
+                        height: 85px;
+                      }
+                      
+                      .checkmark {
+                        height: 30px;
+                        width: 15px;
+                      }
+                }
+            }
+        }
+        .button{
+            font-size: 14px;
+        }
+    }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .outerContainer{
+    .container{
+        width: 300px;
+        padding: 10px;
+        .headerContainer{
+            .image{
+                width: 25px;
+                height: 25px;
+            }
+            .headerText{
+                font-size: 22px;
+            }
+        }
+        .progressBar{
+            width: 90%;
+            margin: 35px 0px 55px 0px;
+            .RSPBprogressBar{
+                height: 3px;
+            }
+            .RSPBprogression{
+                background: #5851d3;
+            }
+            .indexedStep {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+              }
+              
+              .indexedStep.accomplished {
+                background-color: #5851d3;
+                color: white;
+              }
+        }
+        .subComponents{
+            .innerContainer{
+                .titleContainer{
+                    margin-bottom: 40px;
+                    .title{
+                        font-size: 26px;
+                    }
+                    .subTitle{
+                        font-size: 16px;
+                    }
+                }
+                .inputContainer{
+                    margin-bottom: 25px;
+                    .first-input{
+                    }
+                    .second-input{
+                        margin-top: 10px;
+                    }
+                    .titleHeader{
+                        font-size: 14px;
+                        .optional{
+                            margin-left: 3px;
+                        }
+                    }
+                    .input-container{
+
+                        input[type=url] {
+                            font-size: 12px;
+                          }
+                          input[type=text] {
+                            font-size: 12px;
+                          }
+                    }
+                    .errorMessage{
+                        font-size: 12px;
+                    }
+                }
+                .user-container{
+                    margin-bottom: 30px;
+                    .userBox{
+                        padding: 18px;
+                        height: 125px;
+                        width: 100px;
+                        margin-right: 10px;
+                    }
+                    .teamBox{
+                        padding: 18px;
+                        height: 125px;
+                        width: 100px;
+                    }
+                    .image{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .boxTitle{
+                        margin-top: 6px;
+                        font-size: 18px;
+                        text-align: start;
+                    }
+                    .boxDescription{
+                        margin-top: 6px;
+                        font-size: 13px;
+                        text-align: start;
+                    }
+                }
+                .circleContainer{
+                    .circle {
+                        width: 75px;
+                        height: 75px;
+                      }
+                      
+                      .checkmark {
+                        height: 30px;
+                        width: 15px;
+                      }
+                }
+            }
+        }
+        .button{
+            font-size: 14px;
+        }
+    }
+    }
+  }
